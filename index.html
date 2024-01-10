@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>Color changer</title>
     <link rel="stylesheet" href="second.css">
     <!-- <script src="index.js"></script>  -->
-</head>
+<!-- </head>
 <body>
     <div class="container">
         <div class="square"></div>
@@ -28,5 +28,33 @@
         square.style.backgroundColor='black'
     })
     </script>
+</body>
+</html> --> -->
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <div class="container">
+        <div id="myDiv"></div>
+        <button onclick="changeColor()">Switch Color</button>
+    </div>
+<script>
+    function changeColor() {
+        var div = document.getElementById("myDiv");
+        if (div.style.backgroundColor === "black") {
+        div.style.backgroundColor = "green";
+        } else {
+        div.style.backgroundColor = "black";
+        }
+  }
+</script>
 </body>
 </html>
